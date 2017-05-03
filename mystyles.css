@@ -1,0 +1,479 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/03/2017, 11:01:15
+    Author     : Carlos Santiago
+*/
+
+/**Table of Content:
+ * CH01 - Page Structure
+ * CH02 - Top Style
+ * CH03 - Navigation
+ * CH04 - Pictures and links
+ * CH05 - Form
+ * CH06 - General Style
+ * CH07 - Social Media
+**/
+
+/** CH01 - PAGE STRUCTURE**/
+
+.top{
+    position:relative;
+    top:0%;  
+}
+
+body{
+    background-color: #3DAABE;    
+}
+
+.leftbar{
+    float:left;
+    left:0%;
+    color:white;
+    font-family: arial, sans-serif;
+    font-size: 0.95em;
+    margin-top: 10em;
+}
+
+@media only screen and (max-width: 667px) {
+    .leftbar {
+        visibility:hidden;
+    }
+}
+
+
+.rightbar{
+    float:right;
+    right:0%;
+    color:white;
+    font-family: arial, sans-serif;
+    text-align:right;
+    font-size: 0.95em;
+    margin-top: 10em;
+}
+ 
+@media only screen and (max-width: 667px) {
+    .rightbar {
+        visibility:hidden;
+    }
+}
+
+footer{
+    position:absolute;
+    bottom:0px;
+    width:98%;
+    text-align:center;
+    z-index:-10;
+   
+}
+
+.maincontent{
+    position:absolute;
+    top:2em;
+    width:95%;
+    text-align: center;
+    font-family: arial, sans-serif;
+    color: white;  
+    padding:2%;
+    font-size:1.2em;
+    z-index: -2;
+    
+        
+}
+@media only screen and (max-width: 667px) {
+    .maincontent {
+        font-size:1em;
+    }
+}
+
+.maincontent a{
+    font-family: arial, sans-serif;
+    color: yellow;
+    text-decoration:none;
+    
+}
+/** CH02 - TOP STYLE**/
+
+#div1{
+    float:left;
+    left:0%;
+    width:23.55%;
+    height:1%;
+    padding:0.3%;
+    background-color: #000319;
+    margin-right: 1%;
+    
+}
+#div2{
+    float:left;
+    left:25%;
+    width:23.55%;
+    height:1%;
+    background-color: #274382;
+    padding:0.3%;
+    margin-right: 1%;
+    
+}
+#div3{
+    float:left;
+    right:25%;
+    width:23.55%;
+    height:1%;
+    padding:0.3%;
+    background-color: #0078D6;
+}
+#div4{
+    float:right;
+    right:0%;
+    width:23.55%;
+    height:1%;
+    padding:0.3%;
+    background-color: white;
+   
+}
+/** CH03 - NAVIGATION**/
+
+.dropdown {
+    float:left;
+    left:0%;
+    display: inline-block;
+    z-index: 2;
+}
+
+.dropbtn {
+    background-color: #274382;
+    color: white;
+    padding: 1em;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    opacity:0.9;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #19BDE0;
+    color:black;
+    
+   
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: #274382;
+}
+
+
+
+@media only screen and (min-width: 668px) {
+    nav{
+        visibility:hidden;
+    }
+}
+
+
+#bar1{
+    position:absolute;
+    left:0%;
+    top:20%;
+    padding:0.5em 0.5em;
+    width:7em;
+    background-color: #000319;
+    margin:2% 0%;
+    z-index: 3;
+}
+#bar1:hover{
+    border-right-style: solid;
+    border-right-color: yellow;
+    width: 9em;
+}
+#bar2{
+    position:absolute;
+    left:0%;
+    top:27%;
+    padding:0.5em 0.5em;
+    width:9em;
+    background-color: #0023B1;
+    margin:2% 0%;
+    z-index: 3;
+}
+
+#bar2:hover{
+    border-right-style: solid;
+    border-right-color: yellow;
+    width:11em;
+ }
+
+ #bar3{
+    position:absolute;
+    left:0%;
+    top:34%;
+    padding:0.5em 0.5em;
+    width:11em;
+    background-color: #0078D6;
+    margin:2% 0%;
+    z-index: 3;
+ }
+
+#bar3:hover{
+    border-right-style: solid;
+    border-right-color: yellow;
+    width:13em;
+}
+
+#bar5{
+    position:absolute;
+    right:0%;
+    top:20%;
+    padding:0.5em 0.5em;
+    width:7em;
+    background-color: #000319;
+    margin:2% 0%;   
+    z-index: 3;
+}
+#bar5:hover{
+    border-left-style: solid;
+    border-left-color: yellow;
+    width: 9em;
+}
+
+#bar6{
+    position:absolute;
+    right:0%;
+    top:27%;
+    padding:0.5em 0.5em;
+    width:9.5em;
+    background-color: #0023B1;
+    margin:2% 0%;
+    z-index: 3;
+}
+
+#bar6:hover{
+    border-left-style: solid;
+    border-left-color: yellow;
+    width: 11em;
+}
+
+#bar7{
+    position:absolute;
+    right:0%;
+    top:34%;
+    padding:0.5em 0.5em;
+    width:11em;
+    background-color: #0078D6;
+    margin:2% 0%;
+    z-index: 3;
+}
+ 
+#bar7:hover{
+    border-left-style: solid;
+    border-left-color: yellow;
+    width: 13em;
+}
+
+/** CH04 - PICTURES, VIDEO AND LINKS **/
+
+/** pic inside the head **/
+
+#pic1{
+    width:20%;
+}
+@media only screen and (max-width: 667px) {
+    #pic1{
+        width:50%;
+        max-width: 8em;
+    }
+}
+
+.img{
+    max-width:90%;
+}
+
+#dit_video{
+    width:25em; 
+    height:15em;
+    border: none;
+}
+/** setting video size for mobile **/
+@media only screen and (max-width: 667px) {
+    #dit_video{
+        max-width: 90%;
+        height:auto;
+    }
+}
+
+
+/** picture for Home (index.html) link **/
+#myhome{
+    width: 2em;
+}
+#myhome:hover{
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+    width: 3em;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: 700;    
+}
+/* selected link */ 
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+/** CH05 - FORM **/
+
+.myform{
+    position:absolute;
+    right:35%;
+    top:10%;
+    height:auto;
+    width:30%;
+    padding:2em;
+    background-color: white;
+    opacity:0.9;  
+    font-family: arial, sans-serif;
+    text-align:left;
+    color:black;
+    z-index:1;
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 667px) {
+    .myform{
+        visibility: visible;
+        right:2%;
+        top:15%;
+        width:90%;
+        padding:1em;
+        font-size: 0.8em;
+    }
+}
+
+.optional{
+    font-size: 0.8em;
+}
+
+.buttons{	
+	align-items: center;
+	color:blue;
+}
+
+#send{
+	color:white;
+	background-color:#1F0042;
+        clear: both;
+}	
+
+#reset{
+	color:red;
+	background-color:#E80000;
+	color:white;
+	
+}	
+
+/** CH06 - GENERAL STYLE**/
+.general{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width:60%;
+    background-color: whitesmoke;
+    font-family: arial, sans-serif;
+    color:black;
+    opacity: 0.95;
+    padding: 2%;   
+    font-size: 1em;
+ }
+ 
+@media only screen and (max-width: 667px) {
+    .general{
+       font-size:0.9em;
+       position: absolute;
+        left: 3%;
+        top: 15%;
+        width:91%;
+        padding: 1%;   
+    }
+}
+
+#dropme{
+    color:yellow;
+}
+
+/** CH07 - SOCIAL MEDIA**/
+
+#linkedin,#twitter,#google,#facebook{
+    float:right;
+    padding: 0.2em;
+    width:3%;
+}
+@media only screen and (max-width: 667px) {
+    #linkedin,#twitter,#google,#facebook{
+        width:10%;
+        max-width: 2em;
+    }
+}
+
+#google:hover, #facebook:hover,#twitter:hover, #linkedin:hover{
+    width:4%;    
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+}
+
+@media only screen and (max-width: 667px) {
+    #linkedin:hover,#twitter:hover,#google:hover,#facebook:hover{
+        width:14%;
+    }
+}
+
+.maintext{
+    font-size:1.3em;    
+}
+@media only screen and (max-width: 667px) {
+    .maintext{
+       font-size:1em;
+    }
+}
