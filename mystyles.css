@@ -397,6 +397,12 @@ a:active {
         font-size: 0.8em;
     }
 }
+#email, #name, #phone, #subject, #message{
+   border-style:solid;
+	
+}
+
+
 
 .optional{
     font-size: 0.8em;
