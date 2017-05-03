@@ -423,8 +423,7 @@ a:active {
 /** CH06 - GENERAL STYLE**/
 .general{
     position: absolute;
-    left: 20%;
-    right:20%;
+    left: 18%;
     top: 10%;
     width:60%;
     background-color: whitesmoke;
