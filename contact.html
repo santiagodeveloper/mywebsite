@@ -65,54 +65,34 @@ and open the template in the editor.
                 <form onsubmit="return(checkmmail())" action="mailto:eduardo@gmx.at" name="cform" id="cform" method="post">
                     <table>
                         <tr>
-                       <td>Name:
-                       </td>
-                        <td><input type="text" name="yourname" id="yourname" required>
+                        <td><input type="text" name="yourname" id="yourname" placeholder="name" required>
                        </td>
                       </tr>
                       <tr>
-                      <td>
-                        E-mail:
-                       </td>
+                      
                         <td>
-                         <input type="email" name="email" id="email" required>
+                         <input type="email" name="email" id="email" placeholder="email" required>
                         </td>
                                        
                       </tr>
-                      <tr><td></td><td class="optional">Optional</td></tr>
+                      
+                                           
                       <tr>
-                       <td>
-                        Phone:
-                       </td>
-                       <td>
-                        <input type="number" name="telephone" id="telephone">
-                       </td>
-                       </tr>
-                       <tr>
-                        <td></td><td class="optional">Optional</td>
-                       </tr>
-                      <tr>
+                         
                           <td>
-                        Subject:
-                          </td>
-                          <td>
-                             <input type="text" name="subject" id="subject">
+                             <input type="text" name="subject" placeholder="subject" id="subject">
                           </td>
                        
                       </tr>
                                             
                        <tr>
+                         
                          <td>
-                           Message:
-                         </td>
-                         <td>
-                           <textarea rows="5" cols="25" name="message" id="message" required></textarea>
+                           <textarea rows="5" cols="25" name="message" id="message" placeholder="your message" required></textarea>
                          </td>
                         </tr>                        
                           
-                        <tr>
-                            <td></td><td class="optional">Optional</td></tr>
-                        <tr>    
+                           
                         <td></td>
                             <td>
                                 <input type="checkbox" name="email_sendcopy" id="send_copy" onclick="copyemail()" value='Copy Sent'/>Send me a copy
