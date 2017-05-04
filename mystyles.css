@@ -397,10 +397,25 @@ a:active {
         font-size: 0.8em;
     }
 }
-#email, #yourname, #phone, #subject, #message{
-   border-style:solid;
-	
+
+.iform{
+    width: 30%;
+    box-sizing: border-box;
+    border: 0.2em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+    background-color: white;
+    padding: 0.7em 1.5em 0.5em  1.7em;
+    z-index:5;
+    
 }
+
+@media only screen and (max-width: 667px) {
+    .iform{
+        width:90%;
+    }
+}
+
 
 
 
