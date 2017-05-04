@@ -62,17 +62,69 @@ and open the template in the editor.
                     
         <div class="myform" >
             <h3 style="text-align: center">CONTACT</h3>
-                
-            <form>
-                <p><input type="text" id="name" class="iform" placeholder="Name" required></p>
-                <p><input type="email" class="iform" id="email" placeholder="E-mail" required></p>
-                <p><input type="tel" class="iform" id="phone" placeholder="Phone" ></p>
-                 <p><textarea class="iform" id="message" placeholder="Your message" required></p>
-                 <p><input class="buttom" type="reset" value="Apagar">
-                    <input class="buttom" value="Send" type="submit" ></p>
+                <form onsubmit="return(checkmmail())" action="mailto:eduardo@gmx.at" name="cform" id="cform" method="post">
+                    <table>
+                        <tr>
+                       <td>Name:
+                       </td>
+                        <td><input type="text" name="yourname" id="yourname" required>
+                       </td>
+                      </tr>
+                      <tr>
+                      <td>
+                        E-mail:
+                       </td>
+                        <td>
+                         <input type="email" name="email" id="email" required>
+                        </td>
+                                       
+                      </tr>
+                      <tr><td></td><td class="optional">Optional</td></tr>
+                      <tr>
+                       <td>
+                        Phone:
+                       </td>
+                       <td>
+                        <input type="number" name="telephone" id="phone">
+                       </td>
+                       </tr>
+                       <tr>
+                        <td></td><td class="optional">Optional</td>
+                       </tr>
+                      <tr>
+                          <td>
+                        Subject:
+                          </td>
+                          <td>
+                             <input type="text" name="subject" id="subject">
+                          </td>
+                       
+                      </tr>
+                                            
+                       <tr>
+                         <td>
+                           Message:
+                         </td>
+                         <td>
+                           <textarea rows="5" cols="25" name="message" id="message" required></textarea>
+                         </td>
+                        </tr>                        
+                          
+                        <tr>
+                            <td></td><td class="optional">Optional</td></tr>
+                        <tr>    
+                        <td></td>
+                            <td>
+                                <input type="checkbox" name="email_sendcopy" id="send_copy" onclick="copyemail()" value='Copy Sent'/>Send me a copy
+                                
+                           <div class="buttons">
+                           <br><input type="reset" value="Reset" id="reset">
+                           <input type="submit" value="Send" id="send"> 
+                           </div>
+                        </td>
+                        
+                    </table>                             
                 </form>
-                            
-                           
             
                 <div style='text-align: right'>
                     <a href="index.html" ><img id="myhome" src="home.png" alt="home"></a>
