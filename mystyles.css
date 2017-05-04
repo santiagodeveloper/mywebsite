@@ -397,7 +397,7 @@ a:active {
         font-size: 0.8em;
     }
 }
-#email, #name, #phone, #subject, #message{
+#email, #yourname, #phone, #subject, #message{
    border-style:solid;
 	
 }
